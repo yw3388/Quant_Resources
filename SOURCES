@@ -9,3 +9,4 @@ all you have to care is b=c and you are done:
 m1 is [a x b] which is [batch size x in features]
 
 m2 is [c x d] which is [in features x out features]
+https://pytorch.org/docs/master/generated/torch.nn.Linear.html#torch.nn.Linear
