@@ -10,3 +10,23 @@ m1 is [a x b] which is [batch size x in features]
 
 m2 is [c x d] which is [in features x out features]
 https://pytorch.org/docs/master/generated/torch.nn.Linear.html#torch.nn.Linear
+
+
+ValueError: attempted relative import beyond top-level package
+
+
+Assignments:
+assignment perfom on variables, objects in memory
+function calls return objects
+
+self.hunger = hunger
+self.get_hunger(): return self.hunger
+
+constructor: 
+constructor overloading:
+no parameter is no parameter
+this.n = N(parameter)
+
+this in front of the field name: this.number is not necessary. 
+
+
