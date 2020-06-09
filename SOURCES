@@ -1,1 +1,3 @@
 https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
+
+cpu/cuda: conda install numba cudatoolkit pyculib
