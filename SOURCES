@@ -1,3 +1,11 @@
 https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
 
 cpu/cuda: conda install numba cudatoolkit pyculib
+
+
+RuntimeError: size mismatch, m1: [a x b], m2: [c x d]
+all you have to care is b=c and you are done:
+
+m1 is [a x b] which is [batch size x in features]
+
+m2 is [c x d] which is [in features x out features]
