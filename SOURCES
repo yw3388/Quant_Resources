@@ -54,3 +54,21 @@ Feed forward neural network--一种归一化
 convolution: 
 a, b, 1
 就view改成b， a， -1
+
+
+torch.nn is nn.Module
+apply fn recursively to every submodule
+buffers: recurse is True
+
+
+for name, buf in self.named_buffers():
+  if name in ['running_var']:
+  print(buf.size())
+  
+ for name, module in model.named_children():
+    if name in ['conv4']:
+      print(module)
+      
+  for name, param in named_parameters():
+    if name in ['bias']:
+        param.size()
