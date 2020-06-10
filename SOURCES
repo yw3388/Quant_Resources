@@ -1,8 +1,9 @@
+##cpu
 https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
 
 cpu/cuda: conda install numba cudatoolkit pyculib
 
-
+## from stackoverflow
 RuntimeError: size mismatch, m1: [a x b], m2: [c x d]
 all you have to care is b=c and you are done:
 
@@ -15,7 +16,8 @@ https://pytorch.org/docs/master/generated/torch.nn.Linear.html#torch.nn.Linear
 ValueError: attempted relative import beyond top-level package
 
 
-Assignments:
+##from website
+class construction
 assignment perfom on variables, objects in memory
 function calls return objects
 
@@ -29,4 +31,26 @@ this.n = N(parameter)
 
 this in front of the field name: this.number is not necessary. 
 
+##cnn
+convnet: width, height, depth
+every layer has a simple api
 
+##convolutional layer, pooling layer, fully-connected layer
+INPUT: width, height, three channels
+CONV: weight, regions connected to input, filters
+relu: activation max(0, x)
+pool: width, height
+fc: fully connected layer
+
+
+https://www.youtube.com/watch?v=Li5sVEXTIJw
+
+Activation: gate to activate or not
+softmax: to proba, then choose max to give output
+
+Feed forward neural network--一种归一化
+
+结构性数据与非结构性数据
+convolution: 
+a, b, 1
+就view改成b， a， -1
