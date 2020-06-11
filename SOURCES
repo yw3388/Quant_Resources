@@ -72,3 +72,15 @@ for name, buf in self.named_buffers():
   for name, param in named_parameters():
     if name in ['bias']:
         param.size()
+        
+        
+        
+        
+###webscrapping and downloading data
+Your bottleneck is probably that you write the file to disk first and then read it again (I/O). 
+If the file does not exceed your machines random access memory, decompressing the file on the fly in memory might be a faster option
+json.gzip
+
+
+
+decompression from gzip pkg
