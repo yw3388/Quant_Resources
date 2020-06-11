@@ -84,3 +84,5 @@ json.gzip
 
 
 decompression from gzip pkg
+
+read_csv(compression = 'gzip')
