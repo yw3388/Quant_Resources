@@ -86,3 +86,9 @@ json.gzip
 decompression from gzip pkg
 
 read_csv(compression = 'gzip')
+
+
+###decode, Stringio
+Bytes flow:
+
+.json() easy
