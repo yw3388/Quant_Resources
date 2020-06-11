@@ -92,3 +92,5 @@ read_csv(compression = 'gzip')
 Bytes flow:
 
 .json() easy
+
+shrimpy
