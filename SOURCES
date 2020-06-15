@@ -126,3 +126,7 @@ Blogs:
 
 /[+-]?(\d+\.\d+|\d+\./
 |\.\d+)/
+
+
+find floats and integers in string
+'\d*\.?\d+'
