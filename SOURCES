@@ -146,3 +146,32 @@ define:
 t = property(get_method, set_method)
 any method call t will call get_method
 any method assign value to t will call set_method
+get and set: change attributes as self.__attribute
+
+为什么用properties
+所有属性在Python中都是公共的。以下划线或两个下划线开头的名称只是一个警告，即给定的属性是一个实现细
+
+@property
+@p.setter
+getter and setter hide in attributes
+
+
+属性的缺点：
+很难处理异常值
+比如我刚刚想pass parameters到一个setter中
+但是error了
+就会报错：recursion error， exceed number 
+非常无益的回溯(
+
+好处：
+项目小的时候不想改变端口，仅仅数据改变，
+只需要call类的成员即可，直接成员访问
+用property改一些属性（pass parameter）
+
+可以pythonic用来装逼
+
+
+
+__method__: you don't use it
+def __method(self): __避免被subclass overridden
+_: 单行线is a property, and it's part of the API,
