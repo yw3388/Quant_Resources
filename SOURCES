@@ -175,3 +175,8 @@ getter and setter hide in attributes
 __method__: you don't use it
 def __method(self): __避免被subclass overridden
 _: 单行线is a property, and it's part of the API,
+
+
+##liNUX
+vim test.html
+
