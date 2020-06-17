@@ -130,3 +130,19 @@ Blogs:
 
 find floats and integers in string
 '\d*\.?\d+'
+
+
+##@property
+getter and setter:
+add constraints in setters
+
+makes a property object temperature. 
+Simply put, property attaches some code to the member attribute accesses.
+In Python, property() is a built-in function that creates and returns a property object. 
+A property object has three methods, getter(), setter(), and deleter() 
+
+
+define:
+t = property(get_method, set_method)
+any method call t will call get_method
+any method assign value to t will call set_method
