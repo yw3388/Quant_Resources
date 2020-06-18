@@ -197,3 +197,12 @@ $ find <dir> -name "<file>"
 '*'
 
 
+###When I find there are wheels and packages already on github, my time and work is like a bunch of shit, yea...(
+git push 
+git pull
+git checkout -b "new-branch"
+git add
+git commit -m 
+git commit -a
+git push origin master (changed??)
+git checkout -b <branchname>
