@@ -179,4 +179,21 @@ _: 单行线is a property, and it's part of the API,
 
 ##liNUX
 vim test.html
+$pwd
+$cd
+$cd ..
+$ls -la
+$ mkdir create new directory
+$cat : output the contents of file
+$ rm <file>
+$ rm -r <directory>
+$mv <file><filenew>
+$cp <file> <directory>: copy file to existing files ocerwriting an file
+$cp -r <directory><directory2>
+$ touch file: udpate file access and modification time 
+$ chmod -R 600 <directory>
+change permission to 600
+$ find <dir> -name "<file>"
+'*'
+
 
