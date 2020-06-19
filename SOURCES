@@ -251,8 +251,6 @@ parameter是cls或者function（well python觉得世界全都是objects）
 wrapper保护了enclosed class 又embed了instance（wrap）
 可以帮助想改变世界的人给新的cls加更多的功能性又保护了封装的原来的世界
 
-wrapper保护了enclosed class 又embed了instance（wrap）昂
-
 
 
 list = [1, 2, 4]
