@@ -295,3 +295,16 @@ def loss_weight():
 loss_weight()
 瘦了！
 瘦了！
+
+static method:
+bound to class but not objects
+do not require class instance
+knows nothing abou class deals with prameters
+does not access class peorperties but belongs o the class
+比图另外创建一个object update value但是不用class里的
+parameters
+
+
+inheritance
+很好的运用了static method要是子类不改变父类
+parameters
