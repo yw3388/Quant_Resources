@@ -308,3 +308,12 @@ parameters
 inheritance
 很好的运用了static method要是子类不改变父类
 parameters
+
+####
+bug in *args, **kwargs
+class pass in **kwargs to __init__, error in passing one parameter but take no parameter
+kwarg is okay
+*kwarg is pass in tuples
+setattr(): three arguments
+
+vars(class object) to get all attrs
