@@ -234,3 +234,49 @@ if args.quiet:
  ##叫parse的inner function是什么developer的命名标准吗
  ##叫parse的inner function是什么developer的命名标准吗
  害得我研究半天parser和wrapper as decorator
+
+decorator
+No.1
+@decorator
+class a:
+     blablabla
+insr = a(50)
+No.2
+a = decorator(a)
+insr = a(50)
+
+
+修饰器就是把class和另一个class wrapper bind起来
+parameter是cls或者function（well python觉得世界全都是objects）
+wrapper保护了enclosed class 又embed了instance（wrap）
+可以帮助想改变世界的人给新的cls加更多的功能性又保护了封装的原来的世界
+
+wrapper保护了enclosed class 又embed了instance（wrap）昂
+
+
+
+list = [1, 2, 4]
+例子是计算count次数
+def count（func）：
+    def inner(*args, **kwargs):
+    #functions' running times
+      count = list[-1]
+      func(*args, **kwargs)
+      count -= 1
+      return count
+     return inner
+ @count
+ def sum(num):
+    return math.sum(num)
+ 
+ 
+ print(sum([1, 10]))
+ 
+output: 
+ 11
+ 3
+ 
+ 
+ 
+ 
+ 
