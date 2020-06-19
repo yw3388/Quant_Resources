@@ -206,3 +206,31 @@ git commit -m
 git commit -a
 git push origin master (changed??)
 git checkout -b <branchname>
+
+
+##arguments and parameters
+improt argparse
+ parser = argparse.ArgumentParser()
+ parser.add_argument('ech')
+ parser.parse_args()
+
+
+parser = argparse.ArgumentParser()
+groupgroup = parser.add_mutually_exclustive_group()
+group.add_argument('-v', '--versbose')
+group.add_argument('-q', '--quiet')
+parser.add_argument('x', type = int, help = 'the base')
+parser.add_argument('y', type = int, help = 'the exponent')
+args = parser.parse_args()
+answer = args.x * args.y
+
+if args.quiet:
+    print (answer)
+    
+    
+   [-h][-v|-q] xy
+   
+   
+ ##叫parse的inner function是什么developer的命名标准吗
+ ##叫parse的inner function是什么developer的命名标准吗
+ 害得我研究半天parser和wrapper as decorator
