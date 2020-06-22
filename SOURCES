@@ -350,3 +350,30 @@ inspect.getmembers(sample)
 print(inspect.getsource(module.method))
 inspect.signature(module.method) ##need what parameters
 
+##generator
+If the list is smaller than the running machine’s available memory, 
+then list comprehensions can be faster to evaluate than the equivalent generator expression. 
+.send()
+handle exceptions with .throw() 
+stop the generator after a given amount of digits with .close()
+
+
+
+for i in generator:
+  generator.send(##)
+  
+  send ## to the generator
+  
+  
+  ##above is coroutine 
+  
+  ##.throw() allows you to throw exceptions with the generator  
+if sth:
+    generator.throw(ValueError)
+    
+   ##.close() is that it raises StopIteration, an exception used to signal the end of a finite iterator
+   
+   
+   
+   ##timestamp todatetime
+   date_time_obj = date.to_pydatetime()
