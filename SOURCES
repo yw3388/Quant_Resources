@@ -342,3 +342,11 @@ date.fromtimestamp()
 #an interesting one for reddit wrapper
 PRAW
 reddit = praw.Reddit() 
+
+
+after import, do not want to open source codes in a different directory（懒）
+##inspect
+inspect.getmembers(sample)
+print(inspect.getsource(module.method))
+inspect.signature(module.method) ##need what parameters
+
