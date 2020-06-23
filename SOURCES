@@ -368,12 +368,16 @@ for i in generator:
   ##above is coroutine 
   
   ##.throw() allows you to throw exceptions with the generator  
+  except stopIteratino
+  
+  
 if sth:
     generator.throw(ValueError)
     
    ##.close() is that it raises StopIteration, an exception used to signal the end of a finite iterator
    
    ##no change in parameter in generator
+   ##solution: yield (parameter) after updates
    
    ##timestamp todatetime
    date_time_obj = date.to_pydatetime()
