@@ -373,7 +373,7 @@ if sth:
     
    ##.close() is that it raises StopIteration, an exception used to signal the end of a finite iterator
    
-   
+   ##no change in parameter in generator
    
    ##timestamp todatetime
    date_time_obj = date.to_pydatetime()
