@@ -470,8 +470,12 @@ start()
 cancel()
 interval the timer will wait before executing action
 
+##计算总共的线程
+threading.activeCount() - 1
 
 
 
+总共为return的长度
+不管threading call jige functions
 
 
