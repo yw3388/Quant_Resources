@@ -393,3 +393,85 @@ s.close()
    
    
 npm dedupe
+
+##Threading
+i/o tasks
+cpython: global interpreter lock, only one thread can execute python coe
+threading.enumerate(): return a list of Thread objects alive
+threading.Event(): a new event object
+
+
+threading.Thread(group, target, name, args = (), kwargs = ())
+group should be None
+target: invoked by run()
+name : thread name
+args = argument tuple
+
+start()
+if called more than once on the same thread object
+run()
+join(): wait until the thread terminates
+thread identifier: ident
+is_alive
+
+
+Lock():
+loc is a synchronization primitive that is not owned by a thread when locked
+locked and unlocked
+lock:
+acquire(), release()
+
+acquire changes the state to locked and returns
+release only be called in the locked state
+##release the lock, wheh the lock is locked, reset it to unlocked return. if any other threads are blocked waiting for the lock to become unlocked, allow exactly one of them
+##to proceed. 
+
+##RLock
+reentrant lock: synchronization primitive may be acquired multiple times by the same thread
+the lock the lock, a thread calls acquire(); 
+release()
+
+###acquire(), release(): call the lock
+##wait, notify, notifyAll
+##wait(), notify(), notifyAll() method
+
+
+##Producer-consumer situation
+##consumer one item
+cv.acquire()
+while not an_item_is_available():
+  cv.wait()
+get_an_available_item()
+cv.release()
+
+##produce one item
+cv.require()
+make_an_item_available()
+cv.notify()
+cv.release()
+
+threading.Condition
+notify(n=1)
+notifyAll()
+
+
+##Event Objects
+event object manages an internal flag that can be set to true with the set() method, reset to false with the clear() method
+wait() method blocks until flag is true
+
+threading.Event
+is_set()
+clear()
+wait(): block until the internal flag is true
+
+Timers:
+Timer(): threads
+start()
+cancel()
+interval the timer will wait before executing action
+
+
+
+
+
+
