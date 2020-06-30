@@ -554,4 +554,5 @@ def child_iterate(self, nodes):
   
   ###这个没法修理崩溃的bug
   RuntimeError: This event loop is already running
-  
+ close():
+RuntimeError: Cannot close a running event loop
