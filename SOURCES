@@ -478,4 +478,37 @@ threading.activeCount() - 1
 总共为return的长度
 不管threading call jige functions
 
+generator: two generators
+def mygenerator3(n, m):
+  yield from mygenerator(n)
+  yield from mygenerator2(n, m)
+ print(list(mygenerator3(0, 10))
+ 
+ 
+ original function calls mygenerator, mygenerator2 in sequence
+ ###yield from
+ itertools.chain
+ def generator():
+  for v in chain(generator2(), generator3()):
+    yield v
+    
+ class Node:
+    def __init__(self, value):
+        self.left = []
+        self.value = value
+        self.right = []
+     def iterate(self):
+         for node in self.left:
+            yield node.value
+          yield self.value
+          for node in self.right:
+            yield node.value
+    
+ def main():
+   root = Node(0)
+   root.left = [Node(i) foer i in [1, 2, 3]]
+   root.right = [Node(i) for i in [4, 5, 6]]
+   for value in root.iterate():
+    print(value)
+    
 
