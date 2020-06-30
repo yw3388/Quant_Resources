@@ -530,3 +530,26 @@ def child_iterate(self, nodes):
   yield from self.child_iterate(self.left)
   input_value = yield self.value
   yield from self.child_iterate(self.right)
+  
+  
+  
+  REST and Websockets
+  sockets connected to each user and there is a time delay
+  
+  websockets:
+  sockets being connected like each one having a radio
+  send order into the radio and receive it the same time
+  to groups on bands
+  
+  
+  msgs: rest
+ 
+  10. 17.       13
+  100. 112.     20
+  500. 529.    68
+  1000 1050.   115
+  5000. 5183.  522
+  10000 10547.   1019
+  
+  
+  
