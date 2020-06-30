@@ -539,11 +539,11 @@ def child_iterate(self, nodes):
   websockets:
   sockets being connected like each one having a radio
   send order into the radio and receive it the same time
-  to groups on bands
+  to groups 
   
   
   msgs: rest
- 
+ msg.  time for rest time for websockets
   10. 17.       13
   100. 112.     20
   500. 529.    68
@@ -552,4 +552,6 @@ def child_iterate(self, nodes):
   10000 10547.   1019
   
   
+  ###这个没法修理崩溃的bug
+  RuntimeError: This event loop is already running
   
