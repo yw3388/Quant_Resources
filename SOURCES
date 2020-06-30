@@ -510,5 +510,23 @@ def mygenerator3(n, m):
    root.right = [Node(i) for i in [4, 5, 6]]
    for value in root.iterate():
     print(value)
-    
 
+
+i = root.iterate()
+while True:
+  try:
+    it.send(None)
+   except SopIteration:
+    break
+
+v = yield self.value
+
+##refractoring over children:
+def child_iterate(self, nodes):
+  for node in nodes:
+    input_value = yield node.value
+    
+ def node_iterate(self):
+  yield from self.child_iterate(self.left)
+  input_value = yield self.value
+  yield from self.child_iterate(self.right)
