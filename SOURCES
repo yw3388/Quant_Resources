@@ -556,3 +556,7 @@ def child_iterate(self, nodes):
   RuntimeError: This event loop is already running
  close():
 RuntimeError: Cannot close a running event loop
+
+##break from generator
+takewhile
+[ x for x in takewhile( lambda x:sum(x)<20, gen() ) ]
