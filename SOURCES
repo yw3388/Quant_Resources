@@ -564,3 +564,14 @@ nest_asyncio.apply()
 ##break from generator
 takewhile
 [ x for x in takewhile( lambda x:sum(x)<20, gen() ) ]
+
+import inspect
+import foo
+
+for name, obj in inspect.getmembers(foo):
+    if inspect.isclass(obj):
+        print obj
+
+
+##跟class属性过不去了
+##two awaits & run_until_complete()
