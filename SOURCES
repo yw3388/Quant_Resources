@@ -557,6 +557,10 @@ def child_iterate(self, nodes):
  close():
 RuntimeError: Cannot close a running event loop
 
+##solved:
+import nest_asyncio
+nest_asyncio.apply()
+
 ##break from generator
 takewhile
 [ x for x in takewhile( lambda x:sum(x)<20, gen() ) ]
