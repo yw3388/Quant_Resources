@@ -574,7 +574,14 @@ for name, obj in inspect.getmembers(foo):
 
 
 ##跟class属性过不去了
+no attribute---vsd itself
+init start 
+
 ##two awaits & run_until_complete()
 
 tab and indentation error is so annoying in visual studio code
+##check dshift tab and tab again maybe cp error
+
+check db's datatype 
+
 
