@@ -588,3 +588,22 @@ check db's datatype
 ##set time
 time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
 
+##logging
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+
+basicConfig(**kwargs)
+only be called once
+# level: root logger set to the specified severity level
+# filename: this specifies the file
+# filemode: filename is given, file is opened in this mode
+# format 
+
+Handlers
+
+
+
+
