@@ -605,5 +605,11 @@ only be called once
 Handlers
 
 
+##websockets
+event loop is running
+sudo lsof -i:5000
+kill
+
+
 
 
