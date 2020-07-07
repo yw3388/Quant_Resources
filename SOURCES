@@ -611,5 +611,20 @@ sudo lsof -i:5000
 kill
 
 
+pass function into another function
+##myfunction
+def myfunc(anotherfunc, extraArgs):
+    anotherfunc(*extraArgs)
+To be more specific ... with various arguments ...
+
+>>> def x(a,b):
+...     print "param 1 %s param 2 %s"%(a,b)
+...
+>>> def y(z,t):
+...     z(*t)
+...
+>>> y(x,("hello","manuel"))
+param 1 hello param 2 manuel
+>>>
 
 
