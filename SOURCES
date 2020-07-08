@@ -628,3 +628,65 @@ param 1 hello param 2 manuel
 >>>
 
 
+
+##multithreading
+thread not availale
+_thread
+
+##multiple threads within a process share same data space within the main thread
+##share information 
+##do not need much memory overhead
+
+##beginning, execution and conclusion 
+
+##kernel thread, and user thread
+_thread & threading
+
+_thread.start_new_thread(function, args[, kwards])
+
+def fun(threadname, delay):
+  c = 0
+  while c<5:
+    time.sleep(delay)
+    c += 1
+_thread.start_new_thread(print_time, ('thread1', 2, ))
+##limited
+
+
+Threading 
+
+threading.activeCount()
+threading.currentThread()
+threading.enumerate(): currently active
+
+run()
+start()
+join([time])
+isAlive()
+getName
+setName
+
+
+threading.Thread
+run()
+function(threadName, delay, counter)
+threadName.exit()
+
+thread.start()
+thread.join()
+
+
+synchronizing threads
+acquire: force threads to run 
+blocking: thread wait
+set = 0: 0 value if lock cannot be acquired and 1 if lock was acquired; 1 wait
+
+release()
+
+threadLock = threading.Lock()
+thread.start()
+threads.append(thread)
+for t in threads:
+  t.join()
+
+
