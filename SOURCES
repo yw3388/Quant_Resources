@@ -690,5 +690,7 @@ for t in threads:
   t.join()
   
   
-  
-  
+ 
+ ###class variables
+ https://stackoverflow.com/questions/12448414/this-constructor-takes-no-arguments-error-in-init
+ __
