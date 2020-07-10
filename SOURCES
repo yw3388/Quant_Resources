@@ -790,4 +790,6 @@ unittest.FunctionTestCase(test, setUp, tearDown)
 @unittest.skip
 @unittest.expectFailure
 
-
+assert statement takes an expression and optional message.
+assert statement is used to check types, values of argument and the output of the function.
+assert statement is used as debugging tool as it halts the program at the point where an error occurs.
