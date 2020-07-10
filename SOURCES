@@ -659,6 +659,11 @@ threading.activeCount()
 threading.currentThread()
 threading.enumerate(): currently active
 
+
+#threading.Thread(target=run).start()
+#_thread.start_new_thread(run, ())
+
+
 run()
 start()
 join([time])
@@ -690,7 +695,62 @@ for t in threads:
   t.join()
   
   
+  
+ ###channel data structure
+ ###indentation of thread
  
+ multithreadings priority queue
+ get(): get removes and returns an item from the queue
+ put():
+ qsize()
+ empty()
+ full()
+ 
+ 
+ ##创建一个新的queue控制size
+ queueLock.acquire()
+ if not workQueue.empty():
+    data = q.get()
+    queueLock.release()
+  else:
+    queueLock.release()
+   
+   
+   
+   ##make a list of threads
+   ## make a list of names
+   threadList
+   nameList
+   
+  queueLock = threading.Lock()
+  workQueue = Queue.Queue(10)
+  threads = []
+  threadID = 1
+  
+  ##create new threads
+  for tName in threadList:
+    thread = myThread(threadID, tName, workQueue)
+    thread.start()
+    threads.append(thread)
+    threadID += 1
+    
+   ##fill the queue
+   queueLock.acquire()
+   for word in nameList:
+      workQueue.put(word)
+   queueLock.release()
+    
+    
+ #wait for the queue to empty
+ while not workQueue.empty():
+    pass
+    
+   #Notify threads it's time to exit
+   exitFlag = 1
+   for t in threads:
+    t.join()
+    
+    
  ###class variables
  https://stackoverflow.com/questions/12448414/this-constructor-takes-no-arguments-error-in-init
  __
