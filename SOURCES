@@ -816,3 +816,7 @@ fun(*args, **kwds) raises exc
 assertRaisesRegexp(exc, r, fun, args, *kwds)
 
 round(a-b, 7) == 0
+
+
+AssertFalse()
+AttributeError: 'bool' object has no attribute '_formatMessage'
