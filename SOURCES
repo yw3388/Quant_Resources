@@ -820,3 +820,18 @@ round(a-b, 7) == 0
 
 AssertFalse()
 AttributeError: 'bool' object has no attribute '_formatMessage'
+
+
+alternative data:
+Gasoline Consumption
+Proprietary Metrics
+Several sell-side research shops have taken to creating their own broad-based measures of the real-time economy,
+most of which signal a stalling in reopening momentum as Covid cases rise in hot spots across the country.
+At Jefferies LLC, chief economist Aneta Markowska monitors a proprietary U.S. economic activity index made of 
+components including small business activity, restaurant bookings, traffic congestion and web traffic to state unemployment portals.
+TSA Passenger Flow
+Tom Essaye, a former Merrill Lynch trader who founded “The Sevens Report” newsletter, is among those following the number of airline passengers that pass through TSA checkpoints each day.
+The numbers have edged higher in recent weeks, but are still more than 70% lower than where they stood a year ago.
+Restaurant Bookings
+There’s evidence that worsening virus trends are starting to adversely impact consumer behavior -- and key among the warning signs are restaurant bookings, according to Lori Calvasina, 
+head of U.S. equity strategy at RBC. She says the S&P 500’s performance stalled as the trend, measured using OpenTable data, deteriorated in the U.S.
