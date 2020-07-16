@@ -841,6 +841,19 @@ packages
 ##✨🍰✨
 GRequests: Asynchronous Requests
 https://github.com/spyoungtech/grequests
+imap
+map 
+post
+get
 
 attp
 https://github.com/web-trump/ahttp
+
+##json
+json.dumps([])
+json.dumps({}, sort_keys = True)
+json.loads()
+json.JSONDecoder()
+json.JSONEncoder()
+
+
