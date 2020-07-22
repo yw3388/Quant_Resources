@@ -864,3 +864,32 @@ Runtimeerror, typeerror, nameerror
 oserror
 Inputerror
 
+
+
+
+
+serialization:
+
+serial python into bytes
+dumps
+
+字典变成obejcts
+list tuple 变成array
+load
+string/int/dictionary
+
+
+
+一个优秀的包
+demjson.encode(self, obj, nest_level=0) 
+json.JSONEncoder().encode({"foo": ["bar"]}) 
+# Using iterencode(object) to encode a given object. 
+for i in json.JSONEncoder().iterencode(bigobject): 
+    mysocket.write(i) 
+json.dumps
+
+
+encode convert into JSON
+
+
+
