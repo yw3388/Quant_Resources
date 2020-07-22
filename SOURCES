@@ -893,3 +893,8 @@ encode convert into JSON
 
 
 
+
+##process in linux
+$ lsof -i :8000
+
+
