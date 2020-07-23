@@ -898,3 +898,58 @@ encode convert into JSON
 $ lsof -i :8000
 
 
+##美丽鸡汤
+
+  soup.find_all(re.compile(""))
+  
+  
+  ###超级有用的下一级别
+  tag.descendants
+  tag.attrs
+  soup.string
+  
+  ##下一个节点或者下一个解析对象
+  
+  ###过滤器，过滤一类标签
+  def not_lacie(href):
+        return href and not re.compile("lacie").search(href)
+soup.find_all(href=not_lacie)
+find href, id
+find attrs: pass a dictionary
+find string
+
+recursive = False
+
+soup.head.title = soup.find('head').find('title')
+find_next_sublings
+
+tag 直接子标签
+soup.select("head > title")
+# [<title>The Dormouse's story</title>]
+
+soup.select("p > a")
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+
+修改内容
+markup = '<a href="http://example.com/">I linked to <i>example.com</i></a>'
+soup = BeautifulSoup(markup)
+
+tag = soup.a
+tag.string = "New link text."
+tag
+# <a href="http://example.com/">New link text.</a>
+
+
+
+###增加
+soup.a.append("Bar")
+##增加tag
+new_tag = soup.new_tag("a", href="http://www.example.com")
+
+##tag.append()
+NavigableString('')
+tag.append
+
+tag.insert()
