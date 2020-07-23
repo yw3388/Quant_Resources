@@ -953,3 +953,7 @@ NavigableString('')
 tag.append
 
 tag.insert()
+
+unicode（soup)
+str(soup)
+
