@@ -964,3 +964,29 @@ update_wrapper(inner_function, func, assigned=WRAPPER_ASSIGNMENTS)
 @wrap
 
 绝大部扽装饰器是通过闭包实现
+
+def say_hello(country):
+    def wrapper(func):
+        def deco(*args, **kwargs):
+            if country == "china":
+                print("你好!")
+            elif country == "america":
+                print('hello.')
+
+            # 真正执行函数的地方
+            func(*args, **kwargs)
+        return deco
+    return wrapper
+
+
+@say_hello("china")
+def chinese():
+    print("我来自中国。")
+
+@say_hello("america")
+def american():
+    print("I am from America.")
+    
+american()
+print("------------")
+chinese()
