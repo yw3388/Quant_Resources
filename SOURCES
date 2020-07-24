@@ -963,3 +963,4 @@ update_wrapper(inner_function, func, assigned=WRAPPER_ASSIGNMENTS)
 =
 @wrap
 
+绝大部扽装饰器是通过闭包实现
