@@ -957,3 +957,9 @@ tag.insert()
 unicode（soup)
 str(soup)
 
+
+##装饰器
+update_wrapper(inner_function, func, assigned=WRAPPER_ASSIGNMENTS)
+=
+@wrap
+
