@@ -990,3 +990,7 @@ def american():
 american()
 print("------------")
 chinese()
+
+
+series:
+if all(), any()
