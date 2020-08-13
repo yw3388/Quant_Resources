@@ -994,3 +994,13 @@ chinese()
 
 series:
 if all(), any()
+
+
+
+
+##brew and apt-get
+If you want the equivalent to apt-get or yum on Mac OS X, you have two choices.
+
+Homebrew: http://brew.sh
+Macports: http://www.macports.org
+You can use brew install PACKAGE_NAME or port install PACKAGE_NAME to install the package available.
