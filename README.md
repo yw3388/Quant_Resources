@@ -9,3 +9,5 @@ Atsalakis G S, Valavanis K P. Surveying stock market forecasting techniques Part
 
 Cai X, Lin X. 
 Feature Extraction Using Restricted Boltzmann Machine for Stock Price Predic- tion. 2012 IEEE International Conference on Computer Science and Automation Engineering (CSAE), 2012. 80–83.(link)
+
+The implementation of Risk Parity using Spinu convex formulation.
