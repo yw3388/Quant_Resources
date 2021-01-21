@@ -18,7 +18,7 @@ ValueError: attempted relative import beyond top-level package
 
 ##from website
 class construction
-assignment perfom on variables, objects in memory
+assignment perform on variables, objects in memory
 function calls return objects
 
 self.hunger = hunger
@@ -132,6 +132,12 @@ find floats and integers in string
 '\d*\.?\d+'
 
 
+
+
+####pythonic
+
+decorators and design of classes
+
 ##@property
 getter and setter:
 add constraints in setters
@@ -168,7 +174,11 @@ getter and setter hide in attributes
 只需要call类的成员即可，直接成员访问
 用property改一些属性（pass parameter）
 
-可以pythonic用来装逼
+
+multiprocessing and multithreading:
+thread is a unit, process is a unit, thread is smaller than process
+cpu: thread: one, one get resources at one time, process: multiple
+time and memory: thread save
 
 
 
@@ -184,20 +194,21 @@ $cd
 $cd ..
 $ls -la
 $ mkdir create new directory
-$cat : output the contents of file
+$cat : output the contents of file, create new file with contents
+#tree: create new files without contents
 $ rm <file>
 $ rm -r <directory>
 $mv <file><filenew>
 $cp <file> <directory>: copy file to existing files ocerwriting an file
 $cp -r <directory><directory2>
 $ touch file: udpate file access and modification time 
-$ chmod -R 600 <directory>
+$ chmod -R 600 <directory>, change directory
 change permission to 600
 $ find <dir> -name "<file>"
 '*'
 
 
-###When I find there are wheels and packages already on github, my time and work is like a bunch of shit, yea...(
+### create directory on github and merger on trunks
 git push 
 git pull
 git checkout -b "new-branch"
@@ -232,8 +243,8 @@ if args.quiet:
    
    
  ##叫parse的inner function是什么developer的命名标准吗
- ##叫parse的inner function是什么developer的命名标准吗
- 害得我研究半天parser和wrapper as decorator
+
+
 
 decorator
 No.1
@@ -246,10 +257,7 @@ a = decorator(a)
 insr = a(50)
 
 
-修饰器就是把class和另一个class wrapper bind起来
-parameter是cls或者function（well python觉得世界全都是objects）
-wrapper保护了enclosed class 又embed了instance（wrap）
-可以帮助想改变世界的人给新的cls加更多的功能性又保护了封装的原来的世界
+
 
 
 
@@ -275,7 +283,7 @@ output:
  3
  
  
- This instance is like 省下力气？
+ This instance is like 
  
  def do_twice(func):
     def wrapper_do_twice():
@@ -293,8 +301,7 @@ def loss_weight():
     
     
 loss_weight()
-瘦了！
-瘦了！
+
 
 static method:
 bound to class but not objects
@@ -557,11 +564,12 @@ def child_iterate(self, nodes):
  close():
 RuntimeError: Cannot close a running event loop
 
-##solved:
+##solved for runtimeerror of running event loop:
 import nest_asyncio
 nest_asyncio.apply()
 
 ##break from generator
+##throw error
 takewhile
 [ x for x in takewhile( lambda x:sum(x)<20, gen() ) ]
 
@@ -754,7 +762,7 @@ for t in threads:
  ###class variables
  https://stackoverflow.com/questions/12448414/this-constructor-takes-no-arguments-error-in-init
  __
-##Test
+##unit Test
 
 class Test:
 unittest.TestCase
@@ -898,6 +906,8 @@ encode convert into JSON
 $ lsof -i :8000
 
 
+
+###webscrapping 
 ##美丽鸡汤
 
   soup.find_all(re.compile(""))
